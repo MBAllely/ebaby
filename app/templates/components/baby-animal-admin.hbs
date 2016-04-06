@@ -8,12 +8,13 @@
         <h4><strong>Category:</strong> {{baby.category}}</h4>
         <h4><strong>Description:</strong> {{baby.description}}</h4>
         <h4><strong>Price:</strong> ${{baby.price}}</h4>
-        <button class="btn btn-primary" >Update</button>
-        <button class="btn btn-danger" {{action 'deleteBabyAnimal' baby}}>Delete</button>
+        <button class="btn btn-primary" {{action 'toggleUpdateShowing'}}>Update</button>
+        <button class="btn btn-danger" {{action 'deleteBabyAnimal' baby}}><span class="glyphicon glyphicon-trash"></span></button>
       </div>
       <div class="col-sm-6">
         <img src="{{baby.image}}" alt="{{baby.name}}" />
       </div>
     </div>
+    {{baby-admin-update baby=baby updateShowing=updateShowing hideUpdateForm="toggleUpdateShowing"}}
   </div>
 </div>
