@@ -8,7 +8,11 @@
         <h4><strong>Category:</strong> {{baby.category}}</h4>
         <h4><strong>Description:</strong> {{baby.description}}</h4>
         <h4><strong>Price:</strong> ${{baby.price}}</h4>
-        <button class="btn btn-primary" {{action 'addToBasket' baby}}>Add to Cart</button>
+        {{#if baby.inBasket}}
+          <button class="btn btn-primary" disabled>In your Cart</button>
+        {{else}}
+          <button class="btn btn-primary" {{action 'addToBasket' baby}}>Add to Cart</button>
+        {{/if}}
       </div>
       <div class="col-sm-6">
         <img src="{{baby.image}}" alt="{{baby.name}}" />

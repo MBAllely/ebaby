@@ -6,6 +6,7 @@ export default Ember.Component.extend({
   actions: {
     addToBasket(item) {
       this.get('basket').add(item);
+      this.get('basket').isInBasket(item);
     }
   }
 });

@@ -5,5 +5,10 @@ export default DS.Model.extend({
   price: DS.attr('number'),
   description: DS.attr('string'),
   image: DS.attr('string'), //URL for image
-  category: DS.attr('string')
+  category: DS.attr('string'),
+
+  basket: Ember.inject.service(),
+  inBasket: Ember.computed('basket.items.[]', function() {
+    return this.get('basket').includes(this);
+  })
 });
