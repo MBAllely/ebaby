@@ -8,6 +8,10 @@ export default Ember.Component.extend({
     },
     toggleUpdateShowing() {
       this.toggleProperty('updateShowing');
+    },
+    save(baby, params) {
+      this.set('updateShowing', false);
+      this.sendAction('save', baby, params);
     }
   }
 });

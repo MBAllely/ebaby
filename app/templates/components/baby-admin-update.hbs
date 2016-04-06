@@ -20,7 +20,7 @@
     <label for="category">Category</label>
     {{input value=baby.category id="category"}}
   </div>
-  <button {{action 'save'}}>Save</button>
+  <button {{action 'save' baby}}>Save</button>
   <button {{action 'hideForm'}}>Cancel</button>
 </form>
 {{/if}}
