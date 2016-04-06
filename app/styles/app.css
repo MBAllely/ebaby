@@ -3,6 +3,10 @@ nav {
   background-color: grey;
 }
 
+h2 a {
+  color: black;
+}
+
 .navbar-default {
   background-color: #A9E0A6;
 }
