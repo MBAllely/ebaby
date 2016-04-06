@@ -6,3 +6,11 @@ nav {
 .navbar-default {
   background-color: #A9E0A6;
 }
+
+.babyAnimal h3 {
+  text-align: center;
+}
+
+.babyAnimal img {
+  max-height: 200px;
+}
