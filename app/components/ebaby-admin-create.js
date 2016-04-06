@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  isFormShowing: false,
   actions: {
     addBabyAnimal() {
       var params = {
@@ -11,6 +12,10 @@ export default Ember.Component.extend({
         category: this.get('category') ? this.get('category') : "Piglet"
       };
       this.sendAction('addBabyAnimal', params);
+      this.set('isFormShowing', false);
+    },
+    toggleForm() {
+      this.toggleProperty('isFormShowing');
     }
   }
 });
