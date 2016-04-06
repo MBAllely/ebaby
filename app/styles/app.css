@@ -17,4 +17,5 @@ h2 a {
 
 .babyAnimal img {
   max-height: 200px;
+  max-width: 320px;
 }
