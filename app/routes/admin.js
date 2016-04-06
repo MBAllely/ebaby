@@ -9,6 +9,12 @@ export default Ember.Route.extend({
       var newBaby = this.store.createRecord('baby-animal', params);
       newBaby.save();
       this.transitionTo('admin');
+    },
+    deleteBabyAnimal(baby) {
+      if(confirm('Are you sure you want to delete this baby?')) {
+        baby.destroyRecord();
+      };
+      this.transitionTo('admin');
     }
   }
 });

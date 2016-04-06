@@ -9,7 +9,7 @@
         <h4><strong>Description:</strong> {{baby.description}}</h4>
         <h4><strong>Price:</strong> ${{baby.price}}</h4>
         <button class="btn btn-primary" >Update</button>
-        <button class="btn btn-danger" >Delete</button>
+        <button class="btn btn-danger" {{action 'deleteBabyAnimal' baby}}>Delete</button>
       </div>
       <div class="col-sm-6">
         <img src="{{baby.image}}" alt="{{baby.name}}" />
