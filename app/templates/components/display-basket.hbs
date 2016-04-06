@@ -1,4 +1,5 @@
-<h3>Your basket: </h3>
+<h3>Your basket: {{basket.items.length}}</h3>
+<h4>Total price: {{total-price basket.items}}</h4>
 {{#each basket.items as |item|}}
   <li>{{item.name}} -- {{item.price}}</li>
 {{/each}}
