@@ -7,6 +7,27 @@ h2 a {
   color: black;
 }
 
+.jumbotron {
+  text-align: center;
+  margin-top: -20px;
+  background-image: url(http://www.chillhour.com/img/funny/animal_friendship/animal_friendship_16.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.jumbotron .title {
+  background-color: rgba(171, 193, 163, 0.61);
+  border-radius: 5px;
+  display: inline-block;
+  color: yellow;
+}
+
+.jumbotron h1 {
+  margin: 0px 20px;
+  text-shadow: 2px 2px grey;
+}
+
 .btn {
   margin-bottom: 10px;
 }
