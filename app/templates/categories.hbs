@@ -5,5 +5,16 @@
   </div>
 </div>
 <div class="container">
-    {{baby-animal-list babies=model}}
+  <ul>
+    <li>{{#link-to 'index'}}Home{{/link-to}}</li>
+    <li>{{#link-to 'categories' 'Calf'}}Calf{{/link-to}}</li>
+    <li>{{#link-to 'categories' 'Duckling'}}Duckling{{/link-to}}</li>
+    <li>{{#link-to 'categories' 'Piglet'}}Piglet{{/link-to}}</li>
+    <li>{{#link-to 'categories' 'Seal'}}Seal{{/link-to}}</li>
+    <li>{{#link-to 'categories' 'Skunk'}}Skunk{{/link-to}}</li>
+    <li>{{#link-to 'categories' 'Walrus'}}Walrus{{/link-to}}</li>
+    <li>{{#link-to 'categories' 'Misc'}}Misc{{/link-to}}</li>
+  </ul>
+
+  {{baby-animal-list babies=model}}
 </div>
